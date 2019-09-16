@@ -6,3 +6,18 @@ function jediName(firstName, lastName){
 }
 
 console.log(jediName);
+
+function beyond (num){
+    if (num === -Infinity || num === Infinity) 
+    {console.log('And beyond')} 
+    else if (isFinite(num) && num > 0) 
+    {console.log('To infinity')} 
+    else if (isFinite(num) && num < 0)
+    {console.log('Tonegative infinity')
+    } 
+    else if(num === 0){
+      console.log('Staying home')
+    }
+  }
+  
+  console.log(beyond())
