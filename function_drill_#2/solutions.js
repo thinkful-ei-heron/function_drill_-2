@@ -23,6 +23,7 @@ function beyond (num){
   console.log(beyond())
 
 
+
   
   function decode (word){
     if (word[0]=== 'a'){
@@ -40,9 +41,41 @@ function beyond (num){
     return '';
   
   };
-  
   var output = decode('craft block argon meter bells brown croon droop')
   console.log(output);
 
+
+
+  function daysInAMonth(month, leapYear){
+    let days;
+    switch(month){
+      case 'January':
+      case 'March':
+      case 'May':
+      case 'July':
+      case 'August':
+      case 'October':
+      case 'December':
+        days = 31;
+        break;
+  
+      case 'April':
+      case 'June':
+      case 'September':
+      case 'November':
+        days = 30;
+        break;
+  
+      case 'February':
+        if (leapYear === true){
+          days = 29;
+        } else {
+          days = 28;
+        }
+        break;    
+    }
+  
+    return `${month} has ${days} days!`;
+  }
 
   
