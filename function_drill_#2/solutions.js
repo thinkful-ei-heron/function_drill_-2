@@ -22,6 +22,30 @@ function beyond (num){
   
   console.log(beyond())
 
+
+
+  
+  function decode (word){
+    if (word[0]=== 'a'){
+      return word [1];
+    }
+    if (word[0]=== 'b'){
+    return word [2];
+    }
+    if (word[0]=== 'c'){
+    return word [3];
+    }
+    if (word[0]=== 'd'){
+    return word [4];
+    }
+    return '';
+  
+  };
+  var output = decode('craft block argon meter bells brown croon droop')
+  console.log(output);
+
+
+
   function daysInAMonth(month, leapYear){
     let days;
     switch(month){
@@ -53,6 +77,7 @@ function beyond (num){
   
     return `${month} has ${days} days!`;
   }
+
 
   function rockPaperScissors(){
     let player1 = prompt('Choose 1 for rock, 2 for paper, and 3 for scissor!');
