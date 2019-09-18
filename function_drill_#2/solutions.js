@@ -78,4 +78,35 @@ function beyond (num){
     return `${month} has ${days} days!`;
   }
 
+
+  function rockPaperScissors(){
+    let player1 = prompt('Choose 1 for rock, 2 for paper, and 3 for scissor!');
+    const randomNo = Math.floor(Math.random() * 3) + 1;
+    if (player1 == randomNo){
+      alert('It\'s a tie!');
+    } else if (player1 == 1) {
+      if (randomNo == 2){
+        alert('You lost!');
+      } else if (randomNo == 3){
+        alert('You won!');
+      }
+    } else if (player1 == 2){
+      if (randomNo == 1){
+        alert('You won!');
+      } else {
+        alert('You lost!');
+      }
+    } else if (player1 == 3){
+      if (randomNo == 1){
+        alert('You lost!');
+      } else if (randomNo == 2){
+        alert('You won!');
+      }
+    }
+    if (player1 != 1 && player1 != 2 && player1 != 3){
+      throw new Error('not a 1, 2, or 3!')
+    };
+  }
+  
+
   
